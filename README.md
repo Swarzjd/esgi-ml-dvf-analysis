@@ -22,7 +22,7 @@ Projet de Machine Learning et de Deep Learning reposant sur l'analyse d'un jeu d
 
 ```
 .
-├── data/              # Jeux de données (bruts et nettoyés)    # Notebooks d'exploration et d'expérimentation
+├── data/              # Jeux de données (bruts et nettoyés)
 ├── src/               # Code source (prétraitement, modèles, évaluation)
 ├── requirements.txt   # Dépendances Python
 ├── anaysis-dvf.ipynb  # Notebooks d'exploration et d'expérimentation
