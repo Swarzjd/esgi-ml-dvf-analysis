@@ -2,6 +2,9 @@
 
 Projet de Machine Learning et de Deep Learning reposant sur l'analyse d'un jeu de données de biens immobiliers.
 
+Lien utile : 
+- [Lien vers les données](https://static.data.gouv.fr/resources/demandes-de-valeurs-foncieres-geolocalisees/20261020-114721/full-2025.csv.gz)
+
 ## Problématique
 
 À partir des caractéristiques d'un bien immobilier, que peut-on en déduire ? Le projet aborde deux tâches complémentaires.
