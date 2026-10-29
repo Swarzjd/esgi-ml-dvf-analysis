@@ -96,7 +96,18 @@ ou, si le projet est exécutable en script :
 python src/main.py
 ```
 
-### 6. Désactiver l'environnement
+### 6. Lancer l'application Streamlit (classification)
+
+L'application charge le modèle sauvegardé par le notebook : exécutez d'abord `analysis-dvf.ipynb`
+jusqu'à la cellule de sauvegarde (elle crée `models/tree_model.joblib`), puis depuis la racine du projet :
+
+```bash
+streamlit run src/app.py
+```
+
+Renseignez la surface, le nombre de pièces et la valeur foncière, puis cliquez sur la carte pour placer le bien.
+
+### 7. Désactiver l'environnement
 
 ```bash
 deactivate
