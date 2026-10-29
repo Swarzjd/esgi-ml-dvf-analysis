@@ -1,0 +1,10 @@
+#### Folder
+.idea
+.venv
+.vscode
+.vscode-server
+.ipynb_checkpoints
+
+#### File
+.env
+*key*
