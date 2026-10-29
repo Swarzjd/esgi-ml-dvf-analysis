@@ -96,16 +96,26 @@ ou, si le projet est exécutable en script :
 python src/main.py
 ```
 
-### 6. Lancer l'application Streamlit (classification)
+### 6. Lancer l'application Streamlit
 
-L'application charge le modèle sauvegardé par le notebook : exécutez d'abord `analysis-dvf.ipynb`
-jusqu'à la cellule de sauvegarde (elle crée `models/tree_model.joblib`), puis depuis la racine du projet :
+L'application charge les modèles sauvegardés par les notebooks. Exécutez d'abord, jusqu'à leur dernière cellule :
+
+- `analysis-dvf.ipynb` (classification) : crée `models/tree_model.joblib`
+- `regression-analysis.ipynb` (régression) : crée `models/regression_model.joblib`
+
+Puis depuis la racine du projet :
 
 ```bash
 streamlit run src/app.py
 ```
 
-Renseignez la surface, le nombre de pièces et la valeur foncière, puis cliquez sur la carte pour placer le bien.
+L'application contient deux pages (menu de gauche) :
+
+- **Appartement ou maison ?** : surface, nombre de pièces et valeur foncière → type de bien prédit
+- **Estimation du prix** : type de bien, surface et nombre de pièces → valeur foncière estimée
+
+Sur chaque page, cliquez sur la carte pour placer le bien. Pour l'estimation, le code postal et le département
+(attendus par le modèle) sont repris de la transaction connue la plus proche du point cliqué.
 
 ### 7. Désactiver l'environnement
 

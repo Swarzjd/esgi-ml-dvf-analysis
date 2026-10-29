@@ -8,3 +8,4 @@
 #### File
 .env
 *key*
+__pycache__/
